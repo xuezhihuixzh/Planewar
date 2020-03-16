@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameoverbg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.liuxuejian.planefight.activity.GameOverActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ranking"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/newranking"/>
+
+        <TextView
+            android:id="@+id/scoretextview"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#FFCC2F"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/nameet"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:hint="输入你的昵称吧！"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:background="@drawable/player_name_et"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:maxEms="5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/playagain"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:text="再来一局"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFCC2F"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/toranking"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:text="查看排行榜"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFCC2F"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/gobackmain"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onclick"
+            android:text="返回主界面"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFCC2F"/>
+    </LinearLayout>
+
+</LinearLayout>

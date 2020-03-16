@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectmodebg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.liuxuejian.planefight.activity.ModeSelectActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/v11"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/left_arrow"/>
+
+        <TextView
+            android:id="@+id/advance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mode_btn"
+            android:gravity="center"
+            android:text="闯关模式"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+        <View
+            android:id="@+id/v12"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/right_arow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/v21"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/left_arrow"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/endless_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mode_btn"
+            android:gravity="center"
+            android:text="无尽模式"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+        <View
+            android:id="@+id/v22"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/right_arow"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/v31"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/left_arrow"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/hell_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mode_btn"
+            android:gravity="center"
+            android:text="地狱模式"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+        <View
+            android:id="@+id/v32"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/right_arow"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/start"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/mode_tv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="在这个模式里，你将面对强大的BOSS，运用你的智慧和勇气去击败它吧！"
+            android:textColor="#000000"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>
